@@ -1,0 +1,14 @@
+*{ margin: 0; padding: 0; }
+
+body{ height: 100% }
+
+/*.bg{
+    background: url("https://media.giphy.com/media/26u6dryuZH98z5KuY/giphy.gif");
+    height: 800px;
+    width: 100%;
+}*/
+
+.main_container{ padding-top: 4% }
+.section_div { padding-top: 3% }
+ul {list-style-type: none; width: 100%; }
+ul li{ float: left; padding-left: 2%;  }
