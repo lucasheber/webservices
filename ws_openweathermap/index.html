@@ -26,29 +26,41 @@
 
     <section class="section_div">
         <div class="row">
-            <div class="col-sm-8 offset-2">
+            <div class="col-sm-8 offset-3">
                 <div class="weather">
-                    <!--<div>-->
-                        <!--<h5 id="name" style="float: left;padding-top: 11px;"></h5>-->
-                        <!--<img src="" alt="Condição" id="icon">-->
-                    <!--</div>-->
 
-                    <ul>
-                        <li>Temp: <span id="temp-atual"></span>°C</li>
-                        <li>Máx.: <span id="temp-max"></span>°C</li>
-                        <li>Min.: <span id="temp-min"></span>°C</li>
-                        <li>Pressão: <span id="pressure"></span></li>
-                        <li>Lat.: <span id="lat"></span></li>
-                        <li>Lon.: <span id="lon"></span></li>
-                        <li>Pôr do sol: <span id="sunrise"></span></li>
-                    </ul>
-                    <div></div>
+                    <div class="time_moment">
+                        <h5>Tempo no momento em <br><span id="city"></span></h5>
+                    </div>
+
+                    <div class="w_icon">
+                        <img src="" alt="Condição" id="img_icon">
+                        <span id="celcius"></span>
+                    </div>
+
+                    <div class="info">
+                        <ul class="list-info">
+                            <li>Máx.: <span id="temp-max"></span>°C</li>
+                            <li>Min.: <span id="temp-min"></span>°C</li>
+                            <li>Pressão: <span id="pressure"></span></li>
+                            <li>Pôr do sol: <span id="sunrise"></span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-sm-8 offset-3">
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <br><br>
     </section>
 </div>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCetxLR_Ed0D_ZjpKhy5igRj5NHwHlZA0E" async defer></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

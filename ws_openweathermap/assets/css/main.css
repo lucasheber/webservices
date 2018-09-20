@@ -1,4 +1,4 @@
-*{ margin: 0; padding: 0; }
+*{ margin: 0; padding: 0; font-family: Opens Sans}
 
 body{ height: 100% }
 
@@ -8,7 +8,17 @@ body{ height: 100% }
     width: 100%;
 }*/
 
-.main_container{ padding-top: 4% }
+.main_container{ padding-top: 2% }
 .section_div { padding-top: 3% }
-ul {list-style-type: none; width: 100%; }
-ul li{ float: left; padding-left: 2%;  }
+
+.time_moment{width: 400px; padding: 5px; }
+#city{ padding-left: 60px; font-size: 22pt; color: #005cbf}
+
+.w_icon{ margin: 0px 0 0 40px; float: left; width: 300px; }
+.w_icon img{ width: 100px; }
+#celcius{ font-size: 45pt}
+
+.info{ float: left; margin-top: -40px; }
+.list-info{ list-style-type: none; padding: 2px; }
+
+#map{ width: 550px; height: 350px;}
