@@ -21,4 +21,4 @@ body{ height: 100% }
 .info{ float: left; margin-top: -40px; }
 .list-info{ list-style-type: none; padding: 2px; }
 
-#map{ width: 550px; height: 350px;}
+#map{ width: 550px; height: 350px; box-shadow: 4px 4px 4px #000000;}
