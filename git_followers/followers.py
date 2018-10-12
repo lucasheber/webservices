@@ -20,11 +20,11 @@ def get_followers( user ):
             arquivo = open(name_file, "r")
             contents = arquivo.read()
         else:
+            contents = urllib2.urlopen(name_file).read()
             os.makedirs(os.path.dirname(name_file))
             arquivo = open(name_file, "w")
-            arquivo.write("{contents}")
+            arquivo.write(contents)
             arquivo.close();
-            contents = urllib2.urlopen(name_file).read()
 
         
         json_followers = JSON.loads(contents);
@@ -44,10 +44,6 @@ def get_followers( user ):
         print ('Nao foi possivel enviar a requisicao ao servidor! ' + e.message);
         return followers
 
-
-   
-
-
 def get_repositorios(followers):
     for follower in followers:
 
@@ -63,11 +59,11 @@ def get_repositorios(followers):
                 arquivo = open(name_file, "r")
                 contents = arquivo.read()
             else:
+                contents = urllib2.urlopen(follower['reps']).read()
                 os.makedirs(os.path.dirname(name_file))
                 arquivo = open(name_file, "w")
-                arquivo.write("{contents}")
+                arquivo.write(contents)
                 arquivo.close()
-                contents = urllib2.urlopen(follower['reps']).read()
 
             
             repositories = JSON.loads(contents);
@@ -78,8 +74,6 @@ def get_repositorios(followers):
         except Exception as e:
             print ('Nao foi possivel enviar a requisicao ao servidor! ' + e.message );
             continue
-
-
 
 followers = get_followers(user)
 

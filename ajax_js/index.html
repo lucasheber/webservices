@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ajax::Webservices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="main.js"></script>
+</head>
+<body>
+    <div style="margin-top: 30px;"></div>
+    <div class="row">
+        <div class="col col-sm-4 offset-4">
+            <label for="cep">CEP: </label>
+            <input class="form-control" id="cep" name="cep" type="text">
+
+            <br><br>
+            <button class="btn btn-success" onclick="busca_cep();">Buscar</button>
+        </div>
+
+
+        <div class="col-sm-4 offset-4">
+            <br><br>
+            <div style="display: none;" id="div-resp" class="alert alert-success">
+                <span id="resposta"></span>
+            </div>
+
+            <div style="display: none;" id="div-erro" class="alert alert-danger">
+                <span id="resp-erro"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
